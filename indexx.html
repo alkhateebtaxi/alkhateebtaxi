@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ALKHATEEB Taxi und Mietwagen GmbH - Premium Fahrdienstleistungen</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            background-color: #f8f9fa;
+        }
+
+        .header {
+            background-color: #1a1a1a;
+            color: white;
+            padding: 1rem;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #ffc107;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            margin-right: 2rem;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: #ffc107;
+        }
+
+        .hero {
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('taxi-bg.jpg');
+            background-size: cover;
+            height: 80vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+        }
+
+        .hero-content h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .hero-content p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+        }
+
+        .cta-button {
+            background-color: #ffc107;
+            color: #1a1a1a;
+            padding: 1rem 2rem;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.1rem;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .cta-button:hover {
+            background-color: #ffd700;
+        }
+
+        .services {
+            padding: 4rem 1rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .services h2 {
+            text-align: center;
+            margin-bottom: 3rem;
+            color: #1a1a1a;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .service-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+
+        .service-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .service-icon {
+            font-size: 2.5rem;
+            color: #ffc107;
+            margin-bottom: 1rem;
+        }
+
+        .why-us {
+            background-color: #1a1a1a;
+            color: white;
+            padding: 4rem 1rem;
+        }
+
+        .why-us-content {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .why-us h2 {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+
+        .feature-item {
+            text-align: center;
+            padding: 1rem;
+        }
+
+        .feature-item i {
+            font-size: 2rem;
+            color: #ffc107;
+            margin-bottom: 1rem;
+        }
+
+        .footer {
+            background-color: #2d2d2d;
+            color: white;
+            padding: 3rem 1rem;
+            margin-top: 4rem;
+        }
+
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+
+        .footer-section h3 {
+            color: #ffc107;
+            margin-bottom: 1rem;
+        }
+
+        .footer-section ul {
+            list-style: none;
+        }
+
+        .footer-section ul li {
+            margin-bottom: 0.5rem;
+        }
+
+        .footer-section a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .social-links a {
+            font-size: 1.5rem;
+            margin-right: 1rem;
+        }
+
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+            
+            .hero-content h1 {
+                font-size: 2.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <nav class="nav-container">
+            <div class="logo">ALKHATEEB Taxi und Mietwagen GmbH</div>
+            <div class="nav-links">
+                <a href="#services">Dienstleistungen</a>
+                <a href="#why-us">Warum wir?</a>
+                <a href="#contact">Kontakt</a>
+            </div>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Ihre sichere Fahrt beginnt hier</h1>
+            <p>24/7 Taxiservice zu wettbewerbsfähigen Preisen</p>
+            <button class="cta-button">Jetzt buchen</button>
+        </div>
+    </section>
+
+    <section class="services" id="services">
+        <h2>Unsere Dienstleistungen</h2>
+        <div class="services-grid">
+            <div class="service-card">
+                <i class="fas fa-car-side service-icon"></i>
+                <h3>Autovermietung</h3>
+                <p>Mietwagenservice mit oder ohne Fahrer zu Sonderkonditionen</p>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-clock service-icon"></i>
+                <h3>24-Stunden-Service</h3>
+                <p>Rund um die Uhr an 365 Tagen im Jahr verfügbar</p>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-plane service-icon"></i>
+                <h3>Flughafentransfer</h3>
+                <p>Pünktlicher Transfer zum/zum Flughafen im Premiumkomfort</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="why-us" id="why-us">
+        <div class="why-us-content">
+            <h2>Warum ALKHATEEB Taxi und Mietwagen GmbH wählen?</h2>
+            <div class="features">
+                <div class="feature-item">
+                    <i class="fas fa-euro-sign"></i>
+                    <h3>Transparente Preise</h3>
+                    <p>Festpreise ohne versteckte Kosten</p>
+                </div>
+                <div class="feature-item">
+                    <i class="fas fa-shield-alt"></i>
+                    <h3>Sicherheit</h3>
+                    <p>Geprüfte Fahrer und modernste Fahrzeuge</p>
+                </div>
+                <div class="feature-item">
+                    <i class="fas fa-concierge-bell"></i>
+                    <h3>Premium-Service</h3>
+                    <p>Professioneller Service auf höchstem Niveau</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Kontakt</h3>
+                <p>Telefon: 068110803775</p>
+                <p>E-Mail: taxi.alkhateeb@gmail.com</p>
+                <p>Adresse:Jörgerstraße 20/17A, 1160 Wien</p>
+            </div>
+            <div class="footer-section">
+                <h3>Links</h3>
+                <ul>
+                    <li><a href="#services">Dienstleistungen</a></li>
+                    <li><a href="#why-us">Über uns</a></li>
+                    <li><a href="#contact">AGB</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Folgen Sie uns</h3>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
